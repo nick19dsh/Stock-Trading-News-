@@ -63,7 +63,7 @@ if abs(diff_percent) > 0:
     news_response = requests.get(NEWS_ENDPOINT, params=news_params)
     articles = news_response.json()["articles"]
 
-    # 6. A new list of the first 3 article's headline and description using list comprehension
+# 6. A new list of the first 3 article's headline and description using list comprehension
 
     formatted_articles = [
         f"{STOCK_NAME}: {up_down}{abs(diff_percent)}%\nHeadline: {article['title']}. \nBrief: {article['description']}"
@@ -73,7 +73,7 @@ if abs(diff_percent) > 0:
     for article in formatted_articles:
         message = article
 
-        # 7. Send these article briefs through Telegram
+# 7. Send these article briefs through Telegram
 
         parameters_bot = {"chat_id": CHAT_ID, "text": message}
 
