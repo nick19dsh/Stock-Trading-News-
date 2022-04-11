@@ -8,7 +8,7 @@ percentage of difference of particular stock closing price between two days and 
 3. Sends message of absolute difference of stock price if the difference is more than 0 percentage using news API
 4. Sends 3 latest news about the stock using Telegram bot
 
-# Python libraries
+# Python Libraries
 -   os
 -   requests
 -   dotenv
